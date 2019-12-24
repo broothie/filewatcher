@@ -1,0 +1,25 @@
+project_name: filewatcher
+
+builds:
+  - main: ./cmd/filewatcher/main.go
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - darwin
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - 386
+
+checksum:
+  name_template: 'checksums.txt'
+
+changelog:
+  sort: asc
+brews:
+  - homepage: 'https://github.com/filewatcher'
+    description: a filewatcher
+    github:
+      owner: broothie
+      name: homebrew-filewatcher
