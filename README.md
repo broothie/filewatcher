@@ -1,5 +1,5 @@
-# filewatcher
-a filewatcher
+# `filewatcher`
+A filewatcher
 
 ## Installation
 ```bash
